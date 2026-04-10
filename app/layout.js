@@ -25,6 +25,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
+      suppressHydrationWarning
       className={`${inter.variable} ${manrope.variable} h-full scroll-smooth`}
     >
       <body
