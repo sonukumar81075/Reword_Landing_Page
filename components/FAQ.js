@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { HiChevronDown } from "react-icons/hi2";
+import Button from "@/components/Button";
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(null);
@@ -77,10 +78,11 @@ export default function FAQ() {
               key={item.q}
               className="rounded-2xl border border-outline-variant/30 bg-surface-container-low px-5 py-4 transition-colors hover:bg-surface-container-lowest"
             >
-              <button
+              <Button
+                variant="bare"
                 type="button"
                 onClick={() => setOpenIndex(isOpen ? null : actualIndex)}
-                className="flex w-full items-center justify-between gap-4 text-left cursor-pointer"
+                className="cursor-pointer"
               >
                 <span className="text-base font-bold tracking-tight text-on-surface-variant md:text-lg">
                   {item.q}
@@ -91,7 +93,7 @@ export default function FAQ() {
                 >
                   <HiChevronDown className="text-[20px]" />
                 </span>
-              </button>
+              </Button>
 
               {isOpen && (
                 <p className="pt-3 text-sm leading-relaxed text-on-surface-variant sm:text-base">
@@ -104,16 +106,19 @@ export default function FAQ() {
       </div>
 
       <div className="mt-6 flex justify-center md:hidden">
-        <button
+        <Button
+          variant="outline"
+          size="md"
           type="button"
+          shine={false}
           onClick={() => {
             setShowAllMobile((prev) => !prev);
             setOpenIndex(null);
           }}
-          className="rounded-full border border-primary/60 px-8 py-2.5 text-base font-semibold text-primary transition hover:bg-primary/5"
+          className="px-8 py-2.5 font-semibold"
         >
           {showAllMobile ? "Show Less" : "Load More"}
-        </button>
+        </Button>
       </div>
 
       <div className="hidden grid-cols-1 gap-5 md:grid md:grid-cols-2">
@@ -124,10 +129,11 @@ export default function FAQ() {
               key={item.q}
               className="rounded-2xl border border-outline-variant/30 bg-surface-container-low px-5 py-4 transition-colors hover:bg-surface-container-lowest"
             >
-              <button
+              <Button
+                variant="bare"
                 type="button"
                 onClick={() => setOpenIndex(isOpen ? null : index)}
-                className="flex w-full items-center justify-between gap-4 text-left cursor-pointer"
+                className="cursor-pointer"
               >
                 <span className="text-base font-bold tracking-tight text-on-surface-variant md:text-lg">
                   {item.q}
@@ -138,7 +144,7 @@ export default function FAQ() {
                 >
                   <HiChevronDown className="text-[20px]" />
                 </span>
-              </button>
+              </Button>
 
               {isOpen && (
                 <p className="pt-3 text-sm leading-relaxed text-on-surface-variant sm:text-base">

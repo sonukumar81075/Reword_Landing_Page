@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import Button from "@/components/Button";
 
 export default function HowItWorks() {
   const [activeStep, setActiveStep] = useState(0);
@@ -49,19 +50,17 @@ export default function HowItWorks() {
       <div className="md:hidden">
         <div className="mb-6 flex items-center justify-center gap-3">
           {steps.map((step, index) => (
-            <button
+            <Button
               key={`mobile-step-${step.number}`}
+              variant="step"
+              size="step"
               type="button"
+              isActive={activeStep === index}
               onClick={() => setActiveStep(index)}
-              className={`flex h-10 w-10 items-center justify-center rounded-full border text-sm font-bold transition ${
-                activeStep === index
-                  ? "border-primary bg-primary text-white shadow-lg"
-                  : "border-primary/60 bg-white text-primary"
-              }`}
               aria-label={`Show step ${step.number}`}
             >
               {step.number}
-            </button>
+            </Button>
           ))}
         </div>
 

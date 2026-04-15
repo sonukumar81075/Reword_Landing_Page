@@ -11,6 +11,7 @@ import {
   HiOutlineMap,
   HiOutlineUser,
 } from "react-icons/hi2";
+import Button from "@/components/Button";
 
 export default function Customers() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -111,22 +112,26 @@ export default function Customers() {
             </div>
             <div className="mt-4 flex justify-center">
               <div className="inline-flex items-center gap-2 rounded-full bg-primary/90 p-1.5 shadow-lg">
-                <button
+                <Button
+                  variant="iconMuted"
+                  size="iconSm"
                   type="button"
                   onClick={showPrev}
-                  className="flex h-9 w-9 items-center justify-center rounded-full bg-white/15 text-white transition hover:bg-white/30 cursor-pointer"
                   aria-label="Previous image"
+                  shine={false}
                 >
                   <HiChevronLeft className="text-[20px]" />
-                </button>
-                <button
+                </Button>
+                <Button
+                  variant="iconMuted"
+                  size="iconSm"
                   type="button"
                   onClick={showNext}
-                  className="flex h-9 w-9 items-center justify-center rounded-full bg-white/15 text-white transition hover:bg-white/30 cursor-pointer"
                   aria-label="Next image"
+                  shine={false}
                 >
                   <HiChevronRight className="text-[20px]" />
-                </button>
+                </Button>
               </div>
             </div>
             <div className="absolute right-2 top-2 max-w-[150px] rounded-2xl bg-primary p-3 text-white shadow-xl sm:-right-2 sm:top-3 sm:max-w-[170px] sm:p-4 lg:-right-4 lg:top-4 lg:max-w-[190px]"><p className="text-base font-bold sm:text-lg">94%</p><p className="text-[10px] opacity-90 sm:text-xs">Retention rate increase for businesses switching to Revord.</p></div>

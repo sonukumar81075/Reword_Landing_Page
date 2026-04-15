@@ -1,8 +1,9 @@
- "use client";
+"use client";
 
 import { usePathname } from "next/navigation";
 import { HiArrowRight } from "react-icons/hi2";
 import { LuShare2 } from "react-icons/lu";
+import Button from "@/components/Button";
 
 export default function Footer() {
   const pathname = usePathname();
@@ -179,9 +180,14 @@ export default function Footer() {
               placeholder="Email"
               type="email"
             />
-            <button className="flex h-11 w-11 items-center justify-center rounded-lg bg-primary text-white">
+            <Button
+              variant="icon"
+              size="icon"
+              type="button"
+              aria-label="Subscribe"
+            >
               <HiArrowRight className="text-base" />
-            </button>
+            </Button>
           </div>
         </div>
       </div>

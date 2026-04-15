@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { HiSparkles } from "react-icons/hi2";
+import Button from "@/components/Button";
 
 export default function Hero() {
   return (
@@ -17,23 +18,27 @@ export default function Hero() {
       <div className="relative z-10 mx-auto w-full max-w-screen-2xl px-4 sm:px-6 md:px-12 lg:px-24">
         <div className="grid w-full grid-cols-1 items-center gap-10 md:gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="space-y-6 text-center md:space-y-8 sm:text-left">
-          <div className="inline-flex items-center rounded-full bg-tertiary-fixed px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-on-tertiary-fixed-variant md:text-xs">New: Multi-store loyalty support</div>
-          <h1 className="text-4xl font-extrabold leading-[1.1] tracking-tighter text-primary sm:text-5xl lg:text-7xl">Turn first-time customers into <span className="text-gradient">regulars</span></h1>
-          <p className="mx-auto max-w-xl text-sm leading-relaxed text-on-surface-variant md:text-lg sm:mx-0">Simple QR-based loyalty cards for local coffee shops, salons, and retailers. No apps to download. No hardware to buy. No complexity.</p>
-          <div className="flex flex-col items-center gap-3 pt-2 sm:flex-row sm:items-start sm:gap-4 sm:pt-4">
-            <a
-              href="#get-started"
-              className="w-fit rounded-full bg-primary px-6 py-3 text-center text-base font-bold text-white transition-all hover:shadow-xl active:scale-95 sm:px-8 sm:py-4"
-            >
-              List your business
-            </a>
-            <a
-              href="#benefits"
-              className="w-fit rounded-full bg-surface-container-highest px-6 py-3 text-center text-base font-bold text-primary transition-all hover:bg-surface-container-high active:scale-95 sm:px-8 sm:py-4"
-            >
-              Start as customer
-            </a>
-          </div>
+            <div className="inline-flex items-center rounded-full bg-tertiary-fixed px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-on-tertiary-fixed-variant md:text-xs">New: Multi-store loyalty support</div>
+            <h1 className="text-4xl font-extrabold leading-[1.1] tracking-tighter text-primary sm:text-5xl lg:text-7xl">Turn first-time customers into <span className="text-gradient">regulars</span></h1>
+            <p className="mx-auto max-w-xl text-sm leading-relaxed text-on-surface-variant md:text-lg sm:mx-0">Simple QR-based loyalty cards for local coffee shops, salons, and retailers. No apps to download. No hardware to buy. No complexity.</p>
+            <div className="flex flex-col items-center gap-3 pt-2 sm:flex-row sm:items-start sm:gap-4 sm:pt-4">
+              <Button
+                variant="primary"
+                size="md"
+                href="#get-started"
+                className="w-fit text-center font-bold"
+              >
+                List your business
+              </Button>
+              <Button
+                variant="secondary"
+                size="md"
+                href="#benefits"
+                className="w-fit text-center font-bold"
+              >
+                Start as customer
+              </Button>
+            </div>
           </div>
           <div className="group relative hero-visual-enter">
             <div className="absolute -inset-5 rounded-3xl bg-gradient-to-tr from-sky-100/70 via-cyan-50/50 to-teal-100/40 blur-3xl" />
