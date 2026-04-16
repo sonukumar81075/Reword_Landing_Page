@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Security | Revord",
-  description: "How Revord secures merchant and customer loyalty data.",
+  title: "Security | reward",
+  description: "How reward secures merchant and customer loyalty data.",
 };
 
 export default function SecurityPage() {
@@ -10,7 +10,7 @@ export default function SecurityPage() {
         Security
       </h1>
       <p className="mt-3 text-on-surface-variant">
-        Security is built into how Revord handles loyalty operations.
+        Security is built into how reward handles loyalty operations.
       </p>
 
       <div className="mt-10 space-y-8 text-on-surface-variant">
@@ -26,7 +26,7 @@ export default function SecurityPage() {
         <section>
           <h2 className="text-2xl font-bold text-primary">Fraud Prevention</h2>
           <p className="mt-2">
-            Revord supports anti-abuse controls including scan limits, validation
+            reward supports anti-abuse controls including scan limits, validation
             checks, and redemption tracking to protect loyalty programs.
           </p>
         </section>
@@ -43,7 +43,7 @@ export default function SecurityPage() {
           <h2 className="text-2xl font-bold text-primary">Report a Concern</h2>
           <p className="mt-2">
             To report a security issue, email us at{" "}
-            <span className="font-semibold text-primary">security@revord.com</span>.
+            <span className="font-semibold text-primary">security@reward.com</span>.
           </p>
         </section>
       </div>

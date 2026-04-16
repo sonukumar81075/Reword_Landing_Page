@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Contact Support | Revord",
-  description: "Get help with your Revord merchant or customer experience.",
+  title: "Contact Support | reward",
+  description: "Get help with your reward merchant or customer experience.",
 };
 
 export default function ContactSupportPage() {
@@ -10,7 +10,7 @@ export default function ContactSupportPage() {
         Contact Support
       </h1>
       <p className="mt-3 text-on-surface-variant">
-        We are here to help merchants and customers get the best from Revord.
+        We are here to help merchants and customers get the best from reward.
       </p>
 
       <div className="mt-10 grid gap-6 md:grid-cols-2">
@@ -19,7 +19,7 @@ export default function ContactSupportPage() {
           <p className="mt-2 text-on-surface-variant">
             For account help, onboarding, or loyalty setup questions.
           </p>
-          <p className="mt-4 font-semibold text-primary">support@revord.com</p>
+          <p className="mt-4 font-semibold text-primary">support@reward.com</p>
         </section>
 
         <section className="rounded-2xl border border-outline-variant/30 bg-surface-container-low p-6">
@@ -27,7 +27,7 @@ export default function ContactSupportPage() {
           <p className="mt-2 text-on-surface-variant">
             For campaign strategy, retention ideas, and growth guidance.
           </p>
-          <p className="mt-4 font-semibold text-primary">growth@revord.com</p>
+          <p className="mt-4 font-semibold text-primary">growth@reward.com</p>
         </section>
       </div>
 

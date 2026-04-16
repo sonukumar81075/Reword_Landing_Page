@@ -33,7 +33,7 @@ export default function SocialProof() {
     ["\"Since switching from paper cards, we've seen a 30% increase in weekly return customers. They never forget their phone!\"", "James Chen", "Owner, The Daily Grind", "https://lh3.googleusercontent.com/aida-public/AB6AXuC-FzZt-U-hJsYJPDUIz3sbkrLNergf0FOitgk41DS-ydXnAHnTPbI31u06o72HK_sLtjgLw8SHLI6Aljx5LRjLZb8oyGGGxoLJmerpXlBPW62zThug4MD2kNofFIBhMJCriaRzYiXcp9wTfU6v7oJxcJ-E2WcgKwxyFUwraTSapyldBJ-QeNz9DTZfFu9oplVnnFTk4bVmS3D8B1amGQVJ_D232ldw6yWIc-vci8AUCeQs9MEuMnB25UmHS_symM626CtI2J34eBt9", 5],
     ["\"The setup was incredibly fast. I downloaded the QR, printed it, and was issuing stamps the same afternoon.\"", "Sarah Miller", "Founder, Bloom Boutique", "https://lh3.googleusercontent.com/aida-public/AB6AXuBSB6fJ5SkwXHhzsShrS8aZvpuOWaBoZOKW2V1Tu8eTad0_mcwf2de4u3HWTCz6g-f4ggVeEx0IeqTPelgmT7cDGleg1oU-8wS7M6QHw6FiWoSRWd4zVMO1QDFJx-4bAd00mmHBPC52yhHCjEIONbm15aRJ5p8BoJIxIc3jAf-jyTgzHhoX6EeBGaj_095C0XERR46EesKrzitDqHtc1adSo2KEKcwh3Nwh-I8r7weEB-AFA_Wl0T_qqmECnP8N_9vHLNLBiVxcPzZr", 4],
     ["\"Customers love that they don't have to download an app. The browser-based card is a game changer for us.\"", "David Wilson", "Master Barber, Sharp Edge", "https://lh3.googleusercontent.com/aida-public/AB6AXuCe6EPvlByJGeFTDb9ykE-y43YKPMjvkGW-KgnNCJs7p-VJG5_W23pRx4GJdziHTI0dZQ9kWTYL5y53iUlD6w4BPJku9YHwgFIdfWZEG69cUPsJu2jskR3bzPFb1faJfbj_8f3SvjMVB08lQ9pGrrErTAJ4ZLe1QGjddq9lHmGq0hSjLmBOSj3fwLMi5h-c5hI2xg6yC8xcmR1fXcRfNoPKDf2fHTBVLL1rDTjm4lCueR8FsTlEaPTrCD_eLSBhCIuXHOBOiHzS7edd", 5],
-    ["\"Revord made loyalty simple for both our team and customers. Setup was quick and redemptions are smooth at checkout.\"", "Nina Patel", "Owner, Harbor Café", "https://lh3.googleusercontent.com/aida-public/AB6AXuBSB6fJ5SkwXHhzsShrS8aZvpuOWaBoZOKW2V1Tu8eTad0_mcwf2de4u3HWTCz6g-f4ggVeEx0IeqTPelgmT7cDGleg1oU-8wS7M6QHw6FiWoSRWd4zVMO1QDFJx-4bAd00mmHBPC52yhHCjEIONbm15aRJ5p8BoJIxIc3jAf-jyTgzHhoX6EeBGaj_095C0XERR46EesKrzitDqHtc1adSo2KEKcwh3Nwh-I8r7weEB-AFA_Wl0T_qqmECnP8N_9vHLNLBiVxcPzZr", 4],
+    ["\"reward made loyalty simple for both our team and customers. Setup was quick and redemptions are smooth at checkout.\"", "Nina Patel", "Owner, Harbor Café", "https://lh3.googleusercontent.com/aida-public/AB6AXuBSB6fJ5SkwXHhzsShrS8aZvpuOWaBoZOKW2V1Tu8eTad0_mcwf2de4u3HWTCz6g-f4ggVeEx0IeqTPelgmT7cDGleg1oU-8wS7M6QHw6FiWoSRWd4zVMO1QDFJx-4bAd00mmHBPC52yhHCjEIONbm15aRJ5p8BoJIxIc3jAf-jyTgzHhoX6EeBGaj_095C0XERR46EesKrzitDqHtc1adSo2KEKcwh3Nwh-I8r7weEB-AFA_Wl0T_qqmECnP8N_9vHLNLBiVxcPzZr", 4],
   ];
   const rewards = useCountUp(10000, 2200);
   const stamps = useCountUp(50000, 2400);
@@ -49,7 +49,7 @@ export default function SocialProof() {
             Loved by 200+ businesses
           </h2>
           <p className="text-sm text-on-surface-variant md:text-base">
-            Real results from local teams using Revord every day.
+            Real results from local teams using reward every day.
           </p>
         </div>
         <div className="flex w-full items-center overflow-hidden rounded-2xl bg-white shadow-sm sm:w-auto">

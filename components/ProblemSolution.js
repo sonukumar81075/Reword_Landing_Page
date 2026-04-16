@@ -104,7 +104,7 @@ export default function ProblemSolution() {
           <div>
             <div className="mb-8 inline-flex items-center gap-2 text-sm font-bold uppercase tracking-[0.18em] text-primary">
               <HiOutlineCheckCircle className="text-sm" />
-              The Revord Solution
+              The reward Solution
             </div>
             <ul className="space-y-7">
               {solutions.map((item, index) => (

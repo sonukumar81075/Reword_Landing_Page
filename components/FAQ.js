@@ -27,14 +27,14 @@ export default function FAQ() {
     },
     {
       q: "Can I manage multiple store locations?",
-      a: "Yes. Revord supports multi-store setups so each location can run loyalty while you keep centralized visibility and control.",
+      a: "Yes. reward supports multi-store setups so each location can run loyalty while you keep centralized visibility and control.",
     },
     {
       q: "Is customer data export available?",
       a: "Yes. You can export participation and redemption data anytime from your dashboard to help with reporting and retention campaigns.",
     },
     {
-      q: "Does Revord support custom branding?",
+      q: "Does reward support custom branding?",
       a: "Yes. You can use branded QR assets and keep the loyalty experience visually aligned with your business identity.",
     },
     {
@@ -42,7 +42,7 @@ export default function FAQ() {
       a: "You get onboarding help, product guidance, and ongoing support so your team can run loyalty smoothly from day one.",
     },
     {
-      q: "Can staff use Revord without technical training?",
+      q: "Can staff use reward without technical training?",
       a: "Yes. The checkout flow is intentionally simple. Most teams learn the scan and redemption process in a few minutes.",
     },
     {
@@ -50,8 +50,8 @@ export default function FAQ() {
       a: "Absolutely. You can update stamp counts, reward types, and campaign settings anytime from the merchant dashboard.",
     },
     {
-      q: "Does Revord work for cafes, salons, and retail?",
-      a: "Yes. Revord is built for local businesses across food, beauty, and retail with flexible loyalty rules for each model.",
+      q: "Does reward work for cafes, salons, and retail?",
+      a: "Yes. reward is built for local businesses across food, beauty, and retail with flexible loyalty rules for each model.",
     },
     {
       q: "Can customers use loyalty cards at multiple stores?",
@@ -66,7 +66,7 @@ export default function FAQ() {
         Frequently Asked Questions
       </h2>
       <p className="mx-auto mb-8 max-w-3xl text-center text-sm text-on-surface-variant md:mb-12 md:text-base">
-        Everything businesses and customers ask before getting started with Revord.
+        Everything businesses and customers ask before getting started with reward.
       </p>
 
       <div className="grid grid-cols-1 gap-5 md:hidden">

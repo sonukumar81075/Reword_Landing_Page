@@ -26,7 +26,7 @@ export default function Footer() {
               isSupportPage ? "text-white" : "text-primary"
             }`}
           >
-            Revord
+            reward
           </p>
           <p
             className={`text-sm leading-relaxed ${
@@ -198,7 +198,7 @@ export default function Footer() {
             : "border-slate-200 text-slate-400"
         }`}
       >
-        © 2024 Revord. The Digital Architect for Loyalty. All rights reserved.
+        © 2026 reward. The Digital Architect for Loyalty. All rights reserved.
       </div>
     </footer>
   );

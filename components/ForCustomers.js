@@ -14,7 +14,7 @@ const items = [
   {
     icon: MapPin,
     title: "Discover nearby stores",
-    desc: "Map-based discovery of places using Revord.",
+    desc: "Map-based discovery of places using reward.",
   },
   {
     icon: Gift,

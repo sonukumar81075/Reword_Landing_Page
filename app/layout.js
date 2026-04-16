@@ -16,13 +16,13 @@ const manrope = Manrope({
 });
 
 export const metadata = {
-  title: "Revord | Digital Loyalty for Local Businesses",
+  title: "reward | Digital Loyalty for Local Businesses",
   description:
     "Simple QR-based loyalty cards for local businesses. No apps. No complexity.",
   icons: {
-    icon: "/images/logo/Favicon.png",
-    shortcut: "/images/logo/Favicon.png",
-    apple: "/images/logo/Favicon.png",
+    icon: "/favicon-32x32.png",
+    shortcut: "/favicon-32x32.png",
+    apple: "/apple-icon.png",
   },
 };
 
@@ -33,6 +33,7 @@ export default function RootLayout({ children }) {
       suppressHydrationWarning
       className={`${inter.variable} ${manrope.variable} h-full scroll-smooth`}
     >
+    
       <body
         suppressHydrationWarning
         className="min-h-full bg-background text-on-surface antialiased"

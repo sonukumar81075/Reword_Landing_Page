@@ -29,7 +29,7 @@ export default function Customers() {
     [
       HiOutlineMap,
       "Discover Local Gems",
-      "A beautiful map view to find other local businesses using Revord.",
+      "A beautiful map view to find other local businesses using reward.",
     ],
   ];
   const showcaseImages = [
@@ -134,7 +134,7 @@ export default function Customers() {
                 </Button>
               </div>
             </div>
-            <div className="absolute right-2 top-2 max-w-[150px] rounded-2xl bg-primary p-3 text-white shadow-xl sm:-right-2 sm:top-3 sm:max-w-[170px] sm:p-4 lg:-right-4 lg:top-4 lg:max-w-[190px]"><p className="text-base font-bold sm:text-lg">94%</p><p className="text-[10px] opacity-90 sm:text-xs">Retention rate increase for businesses switching to Revord.</p></div>
+            <div className="absolute right-2 top-2 max-w-[150px] rounded-2xl bg-primary p-3 text-white shadow-xl sm:-right-2 sm:top-3 sm:max-w-[170px] sm:p-4 lg:-right-4 lg:top-4 lg:max-w-[190px]"><p className="text-base font-bold sm:text-lg">94%</p><p className="text-[10px] opacity-90 sm:text-xs">Retention rate increase for businesses switching to reward.</p></div>
           </div>
         </div>
       </div>

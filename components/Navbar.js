@@ -115,7 +115,7 @@ export default function Navbar() {
             <div className="  origin-left  scale-[1.2] transition-transform duration-300">
               <Image
                 src={"/images/logo/reward_image.png"}
-                alt="Revord"
+                alt="reward"
                 width={800}
                 height={800}
                 priority
@@ -149,13 +149,17 @@ export default function Navbar() {
               size="sm"
               href={LOGIN_URL}
               className="!hidden font-semibold md:!inline-flex"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Login
             </Button>
             <Button
               variant="primary"
               size="nav"
-              href={isHomePage ? "#get-started" : "/#get-started"}
+              target="_blank"
+              rel="noopener noreferrer"
+              href={isHomePage ? "https://app.rewardlelo.com/merchant/dashboard" : "https://app.rewardlelo.com/merchant/dashboard"}
               className="!hidden md:!inline-flex"
             >
               <span className="md:hidden">Start</span>
@@ -260,6 +264,8 @@ export default function Navbar() {
               <Button
                 variant="outlineMuted"
                 href={LOGIN_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-2 w-full justify-start px-4 py-3.5 text-left text-[15px]"
                 onClick={() => setIsMenuOpen(false)}
               >

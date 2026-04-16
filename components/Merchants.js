@@ -157,7 +157,7 @@ export default function Merchants() {
               shop owners
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-lime-50/90 md:mt-5 md:text-lg">
-              The Revord merchant dashboard gives you full control. Whether you run
+              The reward merchant dashboard gives you full control. Whether you run
               a single pop-up or a city-wide franchise, we&apos;ve got you covered.
             </p>
             <ul className="mt-7 space-y-3">

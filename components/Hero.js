@@ -25,7 +25,9 @@ export default function Hero() {
               <Button
                 variant="primary"
                 size="md"
-                href="#get-started"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://app.rewardlelo.com/merchant/signup"
                 className="w-fit text-center font-bold"
               >
                 List your business
@@ -33,7 +35,9 @@ export default function Hero() {
               <Button
                 variant="secondary"
                 size="md"
-                href="#benefits"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://app.rewardlelo.com"
                 className="w-fit text-center font-bold"
               >
                 Start as customer
@@ -43,8 +47,26 @@ export default function Hero() {
           <div className="group relative hero-visual-enter">
             <div className="absolute -inset-5 rounded-3xl bg-gradient-to-tr from-emerald-100/70 via-lime-100/50 to-yellow-100/40 blur-3xl" />
             <div className="relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-4 shadow-[0_20px_40px_rgba(15,139,63,0.12)] sm:p-6 lg:p-8">
-              <div className="relative overflow-hidden rounded-xl">
-                <Image alt="Revord App UI" className="hero-phone-float h-[280px] w-full rounded-xl object-cover shadow-inner sm:h-[380px] lg:h-[500px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBo6O-7bp2SCQcf0Gu1QEcTomEaOLWuiEl2yOZipFSpolWepM8Jhtrpjhn1AqHRUyo6TrsNX-WUtd9Q7nh0yL8VI4akKqX__uuJly5f5fJ74lvWH3u5qDoj9WovjIlTUFvYnQarSjDl2OGPv4su2EbzyUZjLS7KjoIXdX23KDluE3f_gJ2kVS15V4khVpnvAgab9YPcYlnS5rRI2TIng0IvDRJ7PSrox8yU2Ys4rCfzncWmBL0DeUkGr_IEZ8ViM7NJUbCWm1iR3bm4" width={1200} height={1000} />
+              <div className="pointer-events-none absolute inset-0" aria-hidden>
+                <div className="absolute -left-2 -top-2 h-16 w-16 rounded-tl-2xl border-l-[6px] border-t-[6px] border-primary/70 sm:h-20 sm:w-20" />
+                <div className="absolute -right-2 -bottom-2 h-16 w-16 rounded-br-2xl border-b-[6px] border-r-[6px] border-tertiary-container/85 sm:h-20 sm:w-20" />
+                <div className="absolute left-3 top-3 h-3 w-3 rounded-full bg-primary/70 shadow-[0_0_18px_rgba(15,139,63,0.45)]" />
+                <div className="absolute bottom-3 right-3 h-3 w-3 rounded-full bg-tertiary-container/90 shadow-[0_0_20px_rgba(213,165,20,0.35)]" />
+              </div>
+              <div className="relative overflow-hidden rounded-xl bg-[#121926] p-1.5 sm:p-2 ring-1 ring-white/10">
+                <Image
+                  alt="RewardLelo App UI"
+                  className="hero-phone-float h-[300px] w-full rounded-lg object-contain sm:h-[400px] lg:h-[520px]"
+                  src="/images/logo/image.png"
+                  width={1200}
+                  height={1000}
+                  quality={100}
+                  priority
+                />
+                <span
+                  aria-hidden
+                  className="hero-scan-line pointer-events-none absolute inset-y-1 left-0 w-[34%] rounded-lg"
+                />
               </div>
               <div className="hero-badge-float absolute -bottom-5 left-3 flex items-center gap-2 rounded-xl bg-white px-3 py-2 shadow-xl sm:-bottom-6 sm:-left-6 sm:gap-3 sm:p-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-tertiary-fixed sm:h-12 sm:w-12">

@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Privacy Policy | Revord",
+  title: "Privacy Policy | reward",
   description:
-    "How Revord collects, uses, and protects customer and merchant data.",
+    "How reward collects, uses, and protects customer and merchant data.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -18,7 +18,7 @@ export default function PrivacyPolicyPage() {
         <section>
           <h2 className="text-2xl font-bold text-primary">Overview</h2>
           <p className="mt-2">
-            Revord helps local businesses run digital loyalty programs through QR
+            reward helps local businesses run digital loyalty programs through QR
             cards. We process only the data needed to provide loyalty services for
             merchants and customers.
           </p>
@@ -30,7 +30,7 @@ export default function PrivacyPolicyPage() {
             <li>Basic account and business profile details for merchants.</li>
             <li>Loyalty interaction data such as scans, stamps, and redemptions.</li>
             <li>Device/browser technical data for reliability and security.</li>
-            <li>Support messages sent to Revord.</li>
+            <li>Support messages sent to reward.</li>
           </ul>
         </section>
 
@@ -47,7 +47,7 @@ export default function PrivacyPolicyPage() {
         <section>
           <h2 className="text-2xl font-bold text-primary">Data Sharing</h2>
           <p className="mt-2">
-            Revord does not sell personal data. We only share data with trusted
+            reward does not sell personal data. We only share data with trusted
             service providers needed to operate our platform, or when required by
             law.
           </p>
