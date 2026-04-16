@@ -45,7 +45,7 @@ export default function ForCustomers() {
               key={item.title}
               className="rounded-2xl border border-slate-200/80 bg-white p-6 text-center shadow-sm transition hover:-translate-y-0.5 hover:shadow-lg"
             >
-              <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-cyan-50 text-primary ring-1 ring-cyan-100">
+              <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-lime-50 text-primary ring-1 ring-lime-100">
                 <item.icon className="h-6 w-6" strokeWidth={1.75} aria-hidden />
               </div>
               <h3 className="mt-4 font-semibold text-slate-900">{item.title}</h3>

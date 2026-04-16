@@ -72,14 +72,14 @@ export default function HowItWorks() {
           >
             {steps.map((step) => (
               <div key={`mobile-card-${step.number}`} className="min-w-full">
-                <article className="rounded-3xl border border-outline-variant/20 bg-surface-container-lowest p-5 shadow-[0_10px_30px_rgba(12,74,110,0.04)]">
+                <article className="rounded-3xl border border-outline-variant/20 bg-surface-container-lowest p-5 shadow-[0_10px_30px_rgba(15,139,63,0.08)]">
                   <h3 className="mb-3 text-2xl font-bold leading-tight text-primary">
                     {step.title}
                   </h3>
                   <p className="text-base leading-relaxed text-on-surface-variant">
                     {step.desc}
                   </p>
-                  <div className="mt-6 flex items-start justify-center rounded-2xl bg-sky-50/60 p-4">
+                  <div className="mt-6 flex items-start justify-center rounded-2xl bg-emerald-50/60 p-4">
                     <Image
                       src="https://lh3.googleusercontent.com/aida-public/AB6AXuBo6O-7bp2SCQcf0Gu1QEcTomEaOLWuiEl2yOZipFSpolWepM8Jhtrpjhn1AqHRUyo6TrsNX-WUtd9Q7nh0yL8VI4akKqX__uuJly5f5fJ74lvWH3u5qDoj9WovjIlTUFvYnQarSjDl2OGPv4su2EbzyUZjLS7KjoIXdX23KDluE3f_gJ2kVS15V4khVpnvAgab9YPcYlnS5rRI2TIng0IvDRJ7PSrox8yU2Ys4rCfzncWmBL0DeUkGr_IEZ8ViM7NJUbCWm1iR3bm4"
                       alt={`Step ${step.number} preview`}
@@ -99,7 +99,7 @@ export default function HowItWorks() {
         {steps.map((step, index) => (
           <motion.div
             key={step.title}
-            className={`group relative flex min-h-[430px] transform-gpu flex-col rounded-3xl border border-outline-variant/20 bg-surface-container-lowest p-5 shadow-[0_10px_30px_rgba(12,74,110,0.04)] [will-change:transform] md:min-h-[540px] md:p-6 ${
+            className={`group relative flex min-h-[430px] transform-gpu flex-col rounded-3xl border border-outline-variant/20 bg-surface-container-lowest p-5 shadow-[0_10px_30px_rgba(15,139,63,0.08)] [will-change:transform] md:min-h-[540px] md:p-6 ${
               index % 2 === 1 ? "xl:mt-10" : ""
             }`}
             initial={{ opacity: 0, y: 24 }}
@@ -133,7 +133,7 @@ export default function HowItWorks() {
               {step.desc}
             </p>
 
-            <div className="mt-6 flex flex-1 items-start justify-center rounded-2xl bg-sky-50/60 p-4">
+            <div className="mt-6 flex flex-1 items-start justify-center rounded-2xl bg-emerald-50/60 p-4">
               <Image
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuBo6O-7bp2SCQcf0Gu1QEcTomEaOLWuiEl2yOZipFSpolWepM8Jhtrpjhn1AqHRUyo6TrsNX-WUtd9Q7nh0yL8VI4akKqX__uuJly5f5fJ74lvWH3u5qDoj9WovjIlTUFvYnQarSjDl2OGPv4su2EbzyUZjLS7KjoIXdX23KDluE3f_gJ2kVS15V4khVpnvAgab9YPcYlnS5rRI2TIng0IvDRJ7PSrox8yU2Ys4rCfzncWmBL0DeUkGr_IEZ8ViM7NJUbCWm1iR3bm4"
                 alt={`Step ${step.number} preview`}

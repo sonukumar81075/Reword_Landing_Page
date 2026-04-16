@@ -4,8 +4,8 @@ import { cn } from "@/lib/cn";
 
 const VARIANT_STYLES = {
   primary: cn(
-    "bg-gradient-to-b from-[#126091] to-primary-container text-white",
-    "shadow-[0_4px_14px_-4px_rgba(12,74,110,0.55)] hover:shadow-[0_8px_22px_-6px_rgba(12,74,110,0.45)]",
+    "bg-gradient-to-b from-[#25a84e] to-primary-container text-white",
+    "shadow-[0_4px_14px_-4px_rgba(22,136,63,0.5)] hover:shadow-[0_8px_22px_-6px_rgba(22,136,63,0.42)]",
   ),
   secondary: cn(
     "bg-surface-container-highest text-primary",
@@ -26,7 +26,7 @@ const VARIANT_STYLES = {
   ),
   inverse: cn(
     "bg-white font-black text-primary",
-    "shadow-2xl hover:scale-[1.02] hover:shadow-[0_14px_44px_-12px_rgba(0,51,79,0.35)]",
+    "shadow-2xl hover:scale-[1.02] hover:shadow-[0_14px_44px_-12px_rgba(15,139,63,0.3)]",
   ),
   inverseGhost: cn(
     "border border-white/20 bg-white/10 font-bold text-white backdrop-blur-md",

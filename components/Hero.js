@@ -9,8 +9,8 @@ export default function Hero() {
       className="relative flex min-h-[92vh] w-full items-center overflow-hidden pb-12 pt-24 md:pb-16 md:pt-28 lg:min-h-screen lg:pb-20 lg:pt-32"
     >
       <div className="pointer-events-none absolute inset-0" aria-hidden>
-        <div className="hero-bg-band absolute left-[-30%] top-[18%] h-44 w-[160%] rounded-full bg-gradient-to-r from-primary/20 via-cyan-300/30 to-tertiary-container/25 blur-3xl" />
-        <div className="hero-bg-band-delayed absolute left-[-35%] bottom-[10%] h-40 w-[170%] rounded-full bg-gradient-to-r from-sky-200/30 via-primary/20 to-cyan-200/30 blur-3xl" />
+        <div className="hero-bg-band absolute left-[-30%] top-[18%] h-44 w-[160%] rounded-full bg-gradient-to-r from-primary/20 via-lime-300/30 to-tertiary-container/25 blur-3xl" />
+        <div className="hero-bg-band-delayed absolute left-[-35%] bottom-[10%] h-40 w-[170%] rounded-full bg-gradient-to-r from-emerald-200/30 via-primary/20 to-lime-200/30 blur-3xl" />
         <div className="hero-bg-slide absolute -left-[10%] top-[8%] h-72 w-72 rounded-full bg-primary/20 blur-3xl" />
         <div className="hero-bg-slide-delayed absolute -right-[10%] bottom-[6%] h-80 w-80 rounded-full bg-tertiary-container/30 blur-3xl" />
       </div>
@@ -41,8 +41,8 @@ export default function Hero() {
             </div>
           </div>
           <div className="group relative hero-visual-enter">
-            <div className="absolute -inset-5 rounded-3xl bg-gradient-to-tr from-sky-100/70 via-cyan-50/50 to-teal-100/40 blur-3xl" />
-            <div className="relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-4 shadow-[0_20px_40px_rgba(12,74,110,0.08)] sm:p-6 lg:p-8">
+            <div className="absolute -inset-5 rounded-3xl bg-gradient-to-tr from-emerald-100/70 via-lime-100/50 to-yellow-100/40 blur-3xl" />
+            <div className="relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-4 shadow-[0_20px_40px_rgba(15,139,63,0.12)] sm:p-6 lg:p-8">
               <div className="relative overflow-hidden rounded-xl">
                 <Image alt="Revord App UI" className="hero-phone-float h-[280px] w-full rounded-xl object-cover shadow-inner sm:h-[380px] lg:h-[500px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBo6O-7bp2SCQcf0Gu1QEcTomEaOLWuiEl2yOZipFSpolWepM8Jhtrpjhn1AqHRUyo6TrsNX-WUtd9Q7nh0yL8VI4akKqX__uuJly5f5fJ74lvWH3u5qDoj9WovjIlTUFvYnQarSjDl2OGPv4su2EbzyUZjLS7KjoIXdX23KDluE3f_gJ2kVS15V4khVpnvAgab9YPcYlnS5rRI2TIng0IvDRJ7PSrox8yU2Ys4rCfzncWmBL0DeUkGr_IEZ8ViM7NJUbCWm1iR3bm4" width={1200} height={1000} />
               </div>

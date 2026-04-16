@@ -85,7 +85,7 @@ export default function Customers() {
               ))}
             </div>
           </div>
-          <div className="relative rounded-[2rem] bg-gradient-to-br from-primary-container to-tertiary-container p-4 shadow-[0_20px_40px_rgba(12,74,110,0.18)]">
+          <div className="relative rounded-[2rem] bg-gradient-to-br from-primary-container to-tertiary-container p-4 shadow-[0_20px_40px_rgba(15,139,63,0.2)]">
             <div className="overflow-hidden rounded-[1.5rem] bg-white/10">
               <motion.div
                 className="flex w-full"

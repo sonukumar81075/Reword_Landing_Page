@@ -73,13 +73,13 @@ export default function Merchants() {
                 {[...cards, ...cards].map((card, index) => (
                   <div
                     key={`mobile-${card.title}-${index}`}
-                    className="w-[260px] min-w-[260px] rounded-2xl border border-white/5 bg-[#00334F] p-5 shadow-[0_16px_30px_rgba(6,35,53,0.25)] backdrop-blur-sm"
+                    className="w-[260px] min-w-[260px] rounded-2xl border border-white/5 bg-[#0a5f2f] p-5 shadow-[0_16px_30px_rgba(6,35,20,0.3)] backdrop-blur-sm"
                   >
-                    <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-white/15 text-cyan-100 ring-1 ring-white/20">
+                    <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-white/15 text-lime-100 ring-1 ring-white/20">
                       <card.icon className="text-[20px]" />
                     </div>
                     <h4 className="text-lg font-semibold text-white">{card.title}</h4>
-                    <p className="mt-1 text-sm leading-relaxed text-cyan-50/85">
+                    <p className="mt-1 text-sm leading-relaxed text-lime-50/85">
                       {card.desc}
                     </p>
                   </div>
@@ -104,13 +104,13 @@ export default function Merchants() {
                   (card, index) => (
                     <div
                       key={`left-${card.title}-${index}`}
-                      className="rounded-2xl border border-white/5 bg-[#00334F] p-5 shadow-[0_16px_30px_rgba(6,35,53,0.25)] backdrop-blur-sm transition hover:bg-white/5"
+                      className="rounded-2xl border border-white/5 bg-[#0a5f2f] p-5 shadow-[0_16px_30px_rgba(6,35,20,0.3)] backdrop-blur-sm transition hover:bg-white/5"
                     >
-                      <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-white/15 text-cyan-100 ring-1 ring-white/20">
+                      <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-white/15 text-lime-100 ring-1 ring-white/20">
                         <card.icon className="text-[20px]" />
                       </div>
                       <h4 className="text-lg font-semibold text-white">{card.title}</h4>
-                      <p className="mt-1 text-sm leading-relaxed text-cyan-50/85 md:text-base">
+                      <p className="mt-1 text-sm leading-relaxed text-lime-50/85 md:text-base">
                         {card.desc}
                       </p>
                     </div>
@@ -134,13 +134,13 @@ export default function Merchants() {
                   (card, index) => (
                     <div
                       key={`right-${card.title}-${index}`}
-                      className="rounded-2xl border border-white/5 bg-[#00334F] p-5 shadow-[0_16px_30px_rgba(6,35,53,0.25)] backdrop-blur-sm transition hover:bg-white/5"
+                      className="rounded-2xl border border-white/5 bg-[#0a5f2f] p-5 shadow-[0_16px_30px_rgba(6,35,20,0.3)] backdrop-blur-sm transition hover:bg-white/5"
                     >
-                      <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-white/15 text-cyan-100 ring-1 ring-white/20">
+                      <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-white/15 text-lime-100 ring-1 ring-white/20">
                         <card.icon className="text-[20px]" />
                       </div>
                       <h4 className="text-lg font-semibold text-white">{card.title}</h4>
-                      <p className="mt-1 text-sm leading-relaxed text-cyan-50/85 md:text-base">
+                      <p className="mt-1 text-sm leading-relaxed text-lime-50/85 md:text-base">
                         {card.desc}
                       </p>
                     </div>
@@ -150,21 +150,21 @@ export default function Merchants() {
             </div>
           </div>
 
-          <div className="order-1 h-auto rounded-3xl border border-white/5 bg-[#00334F] p-6 shadow-[0_24px_50px_rgba(6,35,53,0.3)] md:h-[420px] md:p-8 xl:order-2 xl:p-10">
+          <div className="order-1 h-auto rounded-3xl border border-white/5 bg-[#0a5f2f] p-6 shadow-[0_24px_50px_rgba(6,35,20,0.35)] md:h-[420px] md:p-8 xl:order-2 xl:p-10">
             <h2 className="text-2xl font-bold leading-tight text-white md:text-4xl lg:text-5xl">
               Built for modern
               <br />
               shop owners
             </h2>
-            <p className="mt-4 text-sm leading-relaxed text-cyan-50/90 md:mt-5 md:text-lg">
+            <p className="mt-4 text-sm leading-relaxed text-lime-50/90 md:mt-5 md:text-lg">
               The Revord merchant dashboard gives you full control. Whether you run
               a single pop-up or a city-wide franchise, we&apos;ve got you covered.
             </p>
             <ul className="mt-7 space-y-3">
               {points.map((item) => (
                 <li className="flex items-center gap-3" key={item}>
-                  <div className="flex h-6 w-6 items-center justify-center rounded-full bg-cyan-100/20">
-                    <HiCheck className="text-[14px] text-cyan-100" />
+                  <div className="flex h-6 w-6 items-center justify-center rounded-full bg-lime-100/20">
+                    <HiCheck className="text-[14px] text-lime-100" />
                   </div>
                   <span className="font-medium text-white">{item}</span>
                 </li>

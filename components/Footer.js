@@ -16,14 +16,14 @@ export default function Footer() {
   return (
     <footer
       className={`px-4 py-12 sm:px-6 md:px-12 md:py-16 lg:px-24 ${
-        isSupportPage ? "bg-[#00334F]" : "bg-slate-50"
+        isSupportPage ? "bg-[#0a5f2f]" : "bg-slate-50"
       }`}
     >
       <div className="mx-auto grid max-w-screen-2xl grid-cols-2 gap-8 md:grid-cols-4 md:gap-12">
         <div className="col-span-2 space-y-6 md:col-span-1">
           <p
             className={`font-headline text-xl font-extrabold tracking-tight ${
-              isSupportPage ? "text-white" : "text-sky-900"
+              isSupportPage ? "text-white" : "text-primary"
             }`}
           >
             Revord
@@ -52,7 +52,7 @@ export default function Footer() {
         <div>
           <h4
             className={`font-headline mb-6 text-base font-bold ${
-              isSupportPage ? "text-white" : "text-sky-900"
+              isSupportPage ? "text-white" : "text-primary"
             }`}
           >
             Product
@@ -65,7 +65,7 @@ export default function Footer() {
             <li>
               <a
                 className={`underline-offset-4 hover:underline ${
-                  isSupportPage ? "hover:text-white" : "hover:text-sky-600"
+                  isSupportPage ? "hover:text-white" : "hover:text-primary"
                 }`}
                 href="#"
               >
@@ -75,7 +75,7 @@ export default function Footer() {
             <li>
               <a
                 className={`underline-offset-4 hover:underline ${
-                  isSupportPage ? "hover:text-white" : "hover:text-sky-600"
+                  isSupportPage ? "hover:text-white" : "hover:text-primary"
                 }`}
                 href="#"
               >
@@ -85,7 +85,7 @@ export default function Footer() {
             <li>
               <a
                 className={`underline-offset-4 hover:underline ${
-                  isSupportPage ? "hover:text-white" : "hover:text-sky-600"
+                  isSupportPage ? "hover:text-white" : "hover:text-primary"
                 }`}
                 href="#"
               >
@@ -95,7 +95,7 @@ export default function Footer() {
             <li>
               <a
                 className={`underline-offset-4 hover:underline ${
-                  isSupportPage ? "hover:text-white" : "hover:text-sky-600"
+                  isSupportPage ? "hover:text-white" : "hover:text-primary"
                 }`}
                 href="#"
               >
@@ -107,7 +107,7 @@ export default function Footer() {
         <div>
           <h4
             className={`font-headline mb-6 text-base font-bold ${
-              isSupportPage ? "text-white" : "text-sky-900"
+              isSupportPage ? "text-white" : "text-primary"
             }`}
           >
             Support
@@ -120,7 +120,7 @@ export default function Footer() {
             <li>
               <a
                 className={`underline-offset-4 hover:underline ${
-                  isSupportPage ? "hover:text-white" : "hover:text-sky-600"
+                  isSupportPage ? "hover:text-white" : "hover:text-primary"
                 }`}
                 href="/privacy-policy"
               >
@@ -130,7 +130,7 @@ export default function Footer() {
             <li>
               <a
                 className={`underline-offset-4 hover:underline ${
-                  isSupportPage ? "hover:text-white" : "hover:text-sky-600"
+                  isSupportPage ? "hover:text-white" : "hover:text-primary"
                 }`}
                 href="/terms-of-service"
               >
@@ -140,7 +140,7 @@ export default function Footer() {
             <li>
               <a
                 className={`underline-offset-4 hover:underline ${
-                  isSupportPage ? "hover:text-white" : "hover:text-sky-600"
+                  isSupportPage ? "hover:text-white" : "hover:text-primary"
                 }`}
                 href="/contact-support"
               >
@@ -150,7 +150,7 @@ export default function Footer() {
             <li>
               <a
                 className={`underline-offset-4 hover:underline ${
-                  isSupportPage ? "hover:text-white" : "hover:text-sky-600"
+                  isSupportPage ? "hover:text-white" : "hover:text-primary"
                 }`}
                 href="/security"
               >
@@ -162,7 +162,7 @@ export default function Footer() {
         <div className="col-span-2 md:col-span-1">
           <h4
             className={`font-headline mb-6 text-base font-bold ${
-              isSupportPage ? "text-white" : "text-sky-900"
+              isSupportPage ? "text-white" : "text-primary"
             }`}
           >
             Subscribe

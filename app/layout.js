@@ -19,6 +19,11 @@ export const metadata = {
   title: "Revord | Digital Loyalty for Local Businesses",
   description:
     "Simple QR-based loyalty cards for local businesses. No apps. No complexity.",
+  icons: {
+    icon: "/images/logo/Favicon.png",
+    shortcut: "/images/logo/Favicon.png",
+    apple: "/images/logo/Favicon.png",
+  },
 };
 
 export default function RootLayout({ children }) {

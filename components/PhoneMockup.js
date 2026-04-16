@@ -4,7 +4,7 @@ export default function PhoneMockup() {
   return (
     <div className="relative mx-auto w-full max-w-[280px]">
       <div
-        className="absolute -inset-4 rounded-[2.5rem] bg-gradient-to-br from-cyan-400/20 via-sky-500/10 to-primary/15 blur-2xl"
+        className="absolute -inset-4 rounded-[2.5rem] bg-gradient-to-br from-lime-300/20 via-emerald-400/10 to-primary/15 blur-2xl"
         aria-hidden
       />
       <div className="relative rounded-[2rem] border border-slate-200/80 bg-slate-900 p-2 shadow-2xl shadow-primary/10">
