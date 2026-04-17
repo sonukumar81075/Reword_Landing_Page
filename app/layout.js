@@ -1,6 +1,8 @@
 import { Inter, Manrope } from "next/font/google";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import SmoothScroll from "@/components/SmoothScroll";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 import "./globals.css";
 
 const inter = Inter({
@@ -31,16 +33,18 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${inter.variable} ${manrope.variable} h-full scroll-smooth`}
+      className={`${inter.variable} ${manrope.variable} h-full`}
     >
 
       <body
         suppressHydrationWarning
         className="min-h-full bg-background text-on-surface antialiased"
       >
+        <SmoothScroll />
         <Navbar />
         {children}
         <Footer />
+        <ScrollToTopButton />
       </body>
     </html>
   );

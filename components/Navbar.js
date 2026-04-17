@@ -97,7 +97,7 @@ export default function Navbar() {
     <>
       <nav
         className={`fixed top-0 z-50 w-full transition-[box-shadow,background-color,border-color,backdrop-filter] duration-500 ease-out ${scrolled
-          ? "border-b border-emerald-100/35 bg-gradient-to-r from-[#045726]/96 via-[#0f8b3f]/94 to-[#86e3ad]/92 shadow-[0_12px_48px_-12px_rgba(6,53,30,0.35)] backdrop-blur-xl"
+          ? "border-b border-emerald-50/5 bg-gradient-to-r from-[#045726]/96 via-[#0f8b3f]/94 to-[#86e3ad]/92 shadow-[0_12px_48px_-12px_rgba(6,53,30,0.35)] backdrop-blur-xl"
           : "border-b border-transparent bg-transparent shadow-none backdrop-blur-0"
           }`}
       >
