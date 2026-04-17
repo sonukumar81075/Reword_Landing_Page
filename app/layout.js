@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
       suppressHydrationWarning
       className={`${inter.variable} ${manrope.variable} h-full scroll-smooth`}
     >
-    
+
       <body
         suppressHydrationWarning
         className="min-h-full bg-background text-on-surface antialiased"
