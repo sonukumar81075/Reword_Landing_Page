@@ -4,6 +4,51 @@ html {
   scroll-behavior: auto;
 }
 
+/* Brand scrollbar styling */
+html,
+body {
+  scrollbar-width: auto;
+  scrollbar-color: #6CCC90 #e8efe9;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+  background: #e8efe9;
+  border-radius: 9999px;
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #25a84e 0%, #0f8b3f 100%);
+  border-radius: 9999px !important;
+  border: 2px solid #e8efe9;
+  background-clip: padding-box;
+  min-height: 44px;
+}
+
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #d5a514 0%, #0f8b3f 100%);
+}
+
+html::-webkit-scrollbar-corner,
+body::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-button,
+body::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
 @theme inline {
   --color-on-primary: #ffffff;
   --color-surface-container-high: #edf1ea;
@@ -158,7 +203,7 @@ h3 {
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #159947 0%, #d5a514 100%);
+  background: linear-gradient(135deg, #55c981 0%, #d5a514 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
