@@ -58,7 +58,7 @@ export default function ProblemSolution() {
   ];
 
   return (
-    <section id="problem-solution" className="bg-surface-container-low py-12 md:py-16 lg:py-20">
+    <section id="problem-solution" className="bg-[#E6F0EA] py-12 md:py-16 lg:py-20">
       <div className="mx-auto max-w-screen-2xl px-4 sm:px-6 md:px-12 lg:px-24">
         <div className="mb-12 text-center md:mb-16 lg:mb-20">
           <h2 className="mb-4 text-2xl font-bold text-primary md:text-4xl lg:text-5xl">

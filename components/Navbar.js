@@ -97,34 +97,39 @@ export default function Navbar() {
     <>
       <nav
         className={`fixed top-0 z-50 w-full transition-[box-shadow,background-color,border-color,backdrop-filter] duration-500 ease-out ${scrolled
-          ? "border-b border-slate-200/85 bg-white/92 shadow-[0_12px_48px_-12px_rgba(15,23,42,0.14)] backdrop-blur-xl"
-          : "border-b border-white/50 bg-white/75 shadow-[0_8px_32px_-16px_rgba(15,139,63,0.1)] backdrop-blur-lg"
+          ? "border-b border-emerald-100/35 bg-gradient-to-r from-[#045726]/96 via-[#0f8b3f]/94 to-[#86e3ad]/92 shadow-[0_12px_48px_-12px_rgba(6,53,30,0.35)] backdrop-blur-xl"
+          : "border-b border-transparent bg-transparent shadow-none backdrop-blur-0"
           }`}
       >
         <div
-          className={`pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent transition-opacity duration-500 ${scrolled ? "opacity-100" : "opacity-40"
+          className={`pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent transition-opacity duration-500 ${scrolled ? "opacity-100" : "opacity-0"
             }`}
           aria-hidden
         />
 
-        <div className="relative z-50 mx-auto flex max-w-screen-2xl items-center justify-between gap-3 px-4 py-3 sm:gap-4 sm:px-6 md:px-12 lg:px-24">
+        <div className="relative z-50 mx-auto flex max-w-screen-2xl items-center justify-between gap-3 px-4 py-3 sm:gap-4 sm:px-6 md:px-12 lg:px-10 xl:px-24">
           <a
             href={isHomePage ? "#home" : "/#home"}
             className="flex items-center h-16 overflow-visible"
           >
             <div className="  origin-left  scale-[1.2] transition-transform duration-300">
               <Image
-                src={"/images/logo/reward_image.png"}
+                src={"/images/logo/white_logo.png"}
                 alt="reward"
-                width={800}
+                width={700}
                 height={800}
                 priority
-                className="sm:h-14 h-12 w-auto object-contain  "
+                className="sm:h-14 lg:h-10 xl:h-14 h-12 w-fit object-contain object-center scale-90 lg:scale-100 xl:scale-100  "
               />
             </div>
           </a>
 
-          <div className="hidden items-center gap-0.5 rounded-full border border-slate-200/80 bg-gradient-to-b from-slate-50/95 to-slate-100/80 p-1 shadow-[inset_0_1px_0_rgba(255,255,255,0.85),0_1px_2px_rgba(15,23,42,0.04)] md:flex">
+          <div
+            className={`hidden items-center gap-0.5 rounded-full p-1 lg:flex ${scrolled
+              ? "border border-slate-200/80 bg-gradient-to-b from-slate-50/95 to-slate-100/80 shadow-[inset_0_1px_0_rgba(255,255,255,0.85),0_1px_2px_rgba(15,23,42,0.04)]"
+              : "border border-white/25 bg-white/14 backdrop-blur-md"
+              }`}
+          >
             {NAV_LINKS.map((link) => {
               const active = isHomePage && activeHref === link.href;
               return (
@@ -132,7 +137,9 @@ export default function Navbar() {
                   key={link.href}
                   className={`relative rounded-full px-3.5 py-2.5 text-sm font-semibold tracking-tight transition-all duration-300 ease-out lg:px-4 ${active
                     ? "bg-white text-primary shadow-[0_2px_8px_-2px_rgba(15,139,63,0.2)] ring-1 ring-slate-200/90"
-                    : "text-slate-600 hover:text-slate-900"
+                    : scrolled
+                      ? "text-slate-600 hover:text-slate-900"
+                      : "text-white/90 hover:text-white"
                     }`}
                   href={isHomePage ? link.href : `/${link.href}`}
                   onClick={() => setActiveHref(link.href)}
@@ -148,7 +155,7 @@ export default function Navbar() {
               variant="ghost"
               size="sm"
               href={LOGIN_URL}
-              className="!hidden font-semibold md:!inline-flex"
+              className="!hidden !text-white font-semibold hover:!bg-white/20 hover:!text-white md:!inline-flex"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -160,10 +167,10 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
               href={isHomePage ? "https://app.rewardlelo.com/merchant/dashboard" : "https://app.rewardlelo.com/merchant/dashboard"}
-              className="!hidden md:!inline-flex"
+              className="!hidden lg:!inline-flex"
             >
-              <span className="md:hidden">Start</span>
-              <span className="hidden md:inline">Get Started</span>
+              <span className="lg:hidden">Start</span>
+              <span className="hidden lg:inline">Get Started</span>
             </Button>
 
             <button
@@ -172,9 +179,11 @@ export default function Navbar() {
               aria-expanded={isMenuOpen}
               aria-controls="mobile-nav-sheet"
               onClick={() => setIsMenuOpen((prev) => !prev)}
-              className={`flex h-11 w-11 items-center justify-center rounded-2xl border transition-all duration-300 md:hidden ${isMenuOpen
+              className={`flex h-11 w-11 items-center justify-center rounded-2xl border transition-all duration-300 lg:hidden ${isMenuOpen
                 ? "border-primary/30 bg-primary/10 text-primary shadow-inner"
-                : "border-slate-200/90 bg-white/90 text-primary shadow-sm hover:border-primary/25 hover:bg-slate-50"
+                : scrolled
+                  ? "border-slate-200/90 bg-white/90 text-primary shadow-sm hover:border-primary/25 hover:bg-slate-50"
+                  : "border-white/40 bg-white/12 text-white shadow-sm hover:border-white/60 hover:bg-white/20"
                 }`}
             >
               <span className="relative block h-5 w-5">
@@ -194,7 +203,7 @@ export default function Navbar() {
       </nav>
 
       <div
-        className={`fixed inset-0 z-[80] md:hidden ${isMenuOpen ? "pointer-events-auto" : "pointer-events-none"
+        className={`fixed inset-0 z-[80] lg:hidden ${isMenuOpen ? "pointer-events-auto" : "pointer-events-none"
           }`}
         aria-hidden={!isMenuOpen}
       >

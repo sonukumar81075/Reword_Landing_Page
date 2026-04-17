@@ -44,7 +44,7 @@ export default function Merchants() {
 
   return (
     <section
-      className="relative overflow-hidden bg-primary py-12 md:py-16 lg:py-20"
+      className="relative overflow-hidden bg-gradient-to-r from-[#045726] via-[#0f8b3f] to-[#86e3ad] py-12 md:py-16 lg:py-20"
       id="features"
     >
       <div className="mx-auto max-w-screen-2xl px-4 sm:px-6 md:px-12 lg:px-24">

@@ -6,29 +6,38 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-[92vh] w-full items-center overflow-hidden pb-12 pt-24 md:pb-16 md:pt-28 lg:min-h-screen lg:pb-20 lg:pt-32"
+      className="relative flex min-h-[820px] w-full items-center overflow-hidden bg-[#FFFFFF] pb-12 pt-24 sm:min-h-[860px] md:min-h-[92vh] md:pb-16 md:pt-28 lg:min-h-[94vh] lg:pb-16 lg:pt-28 xl:min-h-screen xl:pb-20 xl:pt-32"
     >
-      <div className="pointer-events-none absolute inset-0" aria-hidden>
-        <div className="hero-bg-band absolute left-[-30%] top-[18%] h-44 w-[160%] rounded-full bg-gradient-to-r from-primary/20 via-lime-300/30 to-tertiary-container/25 blur-3xl" />
-        <div className="hero-bg-band-delayed absolute left-[-35%] bottom-[10%] h-40 w-[170%] rounded-full bg-gradient-to-r from-emerald-200/30 via-primary/20 to-lime-200/30 blur-3xl" />
-        <div className="hero-bg-slide absolute -left-[10%] top-[8%] h-72 w-72 rounded-full bg-primary/20 blur-3xl" />
-        <div className="hero-bg-slide-delayed absolute -right-[10%] bottom-[6%] h-80 w-80 rounded-full bg-tertiary-container/30 blur-3xl" />
+      <div className="pointer-events-none absolute inset-0 bg-transparent" aria-hidden>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#045726] via-[#0f8b3f] to-[#86e3ad] xl:hidden" />
+        <Image
+          src="/images/Hero_section/background_image.png"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="hidden object-cover object-[64%_top] sm:object-[60%_top] md:object-center xl:block"
+        />
       </div>
 
-      <div className="relative z-10 mx-auto w-full max-w-screen-2xl px-4 sm:px-6 md:px-12 lg:px-24">
-        <div className="grid w-full grid-cols-1 items-center gap-10 md:gap-12 lg:grid-cols-2 lg:gap-16">
-          <div className="space-y-6 text-center md:space-y-8 sm:text-left">
-            <div className="inline-flex items-center rounded-full bg-tertiary-fixed px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-on-tertiary-fixed-variant md:text-xs">New: Multi-store loyalty support</div>
-            <h1 className="text-4xl font-extrabold leading-[1.1] tracking-tighter text-primary sm:text-5xl lg:text-7xl">Turn first-time customers into <span className="text-gradient">regulars</span></h1>
-            <p className="mx-auto max-w-xl text-sm leading-relaxed text-on-surface-variant md:text-lg sm:mx-0">Simple QR-based loyalty cards for local coffee shops, salons, and retailers. No apps to download. No hardware to buy. No complexity.</p>
-            <div className="flex flex-col items-center gap-3 pt-2 sm:flex-row sm:items-start sm:gap-4 sm:pt-4">
+      <div className="relative z-10 mx-auto w-full max-w-screen-2xl px-4 sm:px-6 md:px-10 lg:px-14 xl:px-24">
+        <div className="grid w-full grid-cols-1 xl:items-start items-center gap-10 md:gap-12 lg:grid-cols-2 xl:gap-16">
+          <div className="space-y-6 text-center md:space-y-8 lg:text-left pt-3">
+            <div className="inline-flex items-center rounded-full bg-white/80 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-primary md:text-xs">
+              New: Multi-store loyalty support
+            </div>
+            <h1 className="text-4xl font-extrabold leading-[1.1] tracking-tighter text-white [text-shadow:0_8px_22px_rgba(8,45,24,0.32)] sm:text-5xl lg:text-6xl xl:text-7xl">
+              Turn first-time customers into{" "}
+              <span className="text-[#f6dd8d]">regulars</span>
+            </h1>
+            <div className="flex flex-col items-center gap-3   sm:flex-row lg:items-start sm:gap-4 justify-center lg:justify-start  ">
               <Button
                 variant="primary"
                 size="md"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://app.rewardlelo.com/merchant/signup"
-                className="w-fit text-center font-bold"
+                className="w-fit text-center font-bold xl:text-[16px] lg:text-sm md:text-sm text-xs"
               >
                 List your business
               </Button>
@@ -38,13 +47,13 @@ export default function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://app.rewardlelo.com"
-                className="w-fit text-center font-bold"
+                className="w-fit text-center font-bold xl:text-[16px] lg:text-sm md:text-sm text-xs"
               >
                 Start as customer
               </Button>
             </div>
           </div>
-          <div className="group relative hero-visual-enter">
+          <div className="group relative mx-auto w-full xl:max-w-[640px] max-w-[400px] hero-visual-enter xl:max-w-none">
             <div className="absolute -inset-5 rounded-3xl bg-gradient-to-tr from-emerald-100/70 via-lime-100/50 to-yellow-100/40 blur-3xl" />
             <div className="relative rounded-2xl border border-outline-variant/10 bg-surface-container-lowest p-4 shadow-[0_20px_40px_rgba(15,139,63,0.12)] sm:p-6 lg:p-8">
               <div className="pointer-events-none absolute inset-0" aria-hidden>
@@ -56,7 +65,7 @@ export default function Hero() {
               <div className="relative overflow-hidden rounded-xl bg-[#121926] p-1.5 sm:p-2 ring-1 ring-white/10">
                 <Image
                   alt="RewardLelo App UI"
-                  className="hero-phone-float h-[300px] w-full rounded-lg object-contain sm:h-[400px] lg:h-[520px]"
+                  className="hero-phone-float h-[300px] w-full rounded-lg object-contain sm:h-[400px] lg:h-[400px] xl:h-[520px]"
                   src="/images/logo/image.png"
                   width={1200}
                   height={1000}

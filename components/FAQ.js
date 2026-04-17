@@ -61,99 +61,105 @@ export default function FAQ() {
   const mobileFaqs = showAllMobile ? faqs : faqs.slice(0, 4);
 
   return (
-    <section className="mx-auto max-w-screen-2xl px-4 py-12 sm:px-6 md:px-12 md:py-16 lg:px-24 lg:py-20" id="faq">
-      <h2 className="mb-4 text-center text-2xl font-bold text-primary md:text-4xl lg:text-5xl">
-        Frequently Asked Questions
-      </h2>
-      <p className="mx-auto mb-8 max-w-3xl text-center text-sm text-on-surface-variant md:mb-12 md:text-base">
-        Everything businesses and customers ask before getting started with reward.
-      </p>
 
-      <div className="grid grid-cols-1 gap-5 md:hidden">
-        {mobileFaqs.map((item, index) => {
-          const actualIndex = showAllMobile ? index : index;
-          const isOpen = openIndex === actualIndex;
-          return (
-            <div
-              key={item.q}
-              className="rounded-2xl border border-outline-variant/30 bg-surface-container-low px-5 py-4 transition-colors hover:bg-surface-container-lowest"
-            >
-              <Button
-                variant="bare"
-                type="button"
-                onClick={() => setOpenIndex(isOpen ? null : actualIndex)}
-                className="cursor-pointer"
-              >
-                <span className="text-base font-bold tracking-tight text-on-surface-variant md:text-lg">
-                  {item.q}
-                </span>
-                <span
-                  className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-primary/50 text-primary transition-transform ${isOpen ? "rotate-180" : ""
-                    }`}
-                >
-                  <HiChevronDown className="text-[20px]" />
-                </span>
-              </Button>
-
-              {isOpen && (
-                <p className="pt-3 text-sm leading-relaxed text-on-surface-variant sm:text-base">
-                  {item.a}
-                </p>
-              )}
-            </div>
-          );
-        })}
+    <section className=" bg-[#FEFEFF]" id="faq">
+      <div className=" bg-gradient-to-r from-[#045726] via-[#0f8b3f] to-[#86e3ad] px-4 py-14 text-center shadow-[0_14px_32px_-14px_rgba(8,45,24,0.35)]  md:py-16  ">
+        <h2 className="text-2xl font-bold text-white md:text-4xl lg:text-5xl">
+          Frequently Asked Questions
+        </h2>
+        <p className="mx-auto mt-3 max-w-3xl text-sm text-white/90 md:text-base">
+          Everything businesses and customers ask before getting started with reward.
+        </p>
       </div>
 
-      <div className="mt-6 flex justify-center md:hidden">
-        <Button
-          variant="outline"
-          size="md"
-          type="button"
-          shine={false}
-          onClick={() => {
-            setShowAllMobile((prev) => !prev);
-            setOpenIndex(null);
-          }}
-          className="px-8 py-2.5 font-semibold"
-        >
-          {showAllMobile ? "Show Less" : "Load More"}
-        </Button>
-      </div>
+      <div className="mx-auto max-w-screen-2xl px-4 pb-12 sm:px-6 md:px-12 md:pb-16 lg:px-24 lg:pb-20 pt-10 ">
 
-      <div className="hidden grid-cols-1 gap-5 md:grid md:grid-cols-2">
-        {faqs.map((item, index) => {
-          const isOpen = openIndex === index;
-          return (
-            <div
-              key={item.q}
-              className="rounded-2xl border border-outline-variant/30 bg-surface-container-low px-5 py-4 transition-colors hover:bg-surface-container-lowest"
-            >
-              <Button
-                variant="bare"
-                type="button"
-                onClick={() => setOpenIndex(isOpen ? null : index)}
-                className="cursor-pointer"
+        <div className="grid grid-cols-1 gap-5 md:hidden">
+          {mobileFaqs.map((item, index) => {
+            const actualIndex = showAllMobile ? index : index;
+            const isOpen = openIndex === actualIndex;
+            return (
+              <div
+                key={item.q}
+                className="rounded-2xl border border-outline-variant/30 bg-surface-container-low px-5 py-4 transition-colors hover:bg-surface-container-lowest"
               >
-                <span className="text-base font-bold tracking-tight text-on-surface-variant md:text-lg">
-                  {item.q}
-                </span>
-                <span
-                  className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-primary/50 text-primary transition-transform ${isOpen ? "rotate-180" : ""
-                    }`}
+                <Button
+                  variant="bare"
+                  type="button"
+                  onClick={() => setOpenIndex(isOpen ? null : actualIndex)}
+                  className="cursor-pointer"
                 >
-                  <HiChevronDown className="text-[20px]" />
-                </span>
-              </Button>
+                  <span className="text-base font-bold tracking-tight text-on-surface-variant md:text-lg">
+                    {item.q}
+                  </span>
+                  <span
+                    className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-primary/50 text-primary transition-transform ${isOpen ? "rotate-180" : ""
+                      }`}
+                  >
+                    <HiChevronDown className="text-[20px]" />
+                  </span>
+                </Button>
 
-              {isOpen && (
-                <p className="pt-3 text-sm leading-relaxed text-on-surface-variant sm:text-base">
-                  {item.a}
-                </p>
-              )}
-            </div>
-          );
-        })}
+                {isOpen && (
+                  <p className="pt-3 text-sm leading-relaxed text-on-surface-variant sm:text-base">
+                    {item.a}
+                  </p>
+                )}
+              </div>
+            );
+          })}
+        </div>
+
+        <div className="mt-6 flex justify-center md:hidden">
+          <Button
+            variant="outline"
+            size="md"
+            type="button"
+            shine={false}
+            onClick={() => {
+              setShowAllMobile((prev) => !prev);
+              setOpenIndex(null);
+            }}
+            className="px-8 py-2.5 font-semibold"
+          >
+            {showAllMobile ? "Show Less" : "Load More"}
+          </Button>
+        </div>
+
+        <div className="hidden grid-cols-1 gap-5 md:grid md:grid-cols-2">
+          {faqs.map((item, index) => {
+            const isOpen = openIndex === index;
+            return (
+              <div
+                key={item.q}
+                className="rounded-2xl border border-outline-variant/30 bg-surface-container-lowest px-5 py-4 transition-colors "
+              >
+                <Button
+                  variant="bare"
+                  type="button"
+                  onClick={() => setOpenIndex(isOpen ? null : index)}
+                  className="cursor-pointer"
+                >
+                  <span className="text-base font-bold tracking-tight text-on-surface-variant md:text-lg">
+                    {item.q}
+                  </span>
+                  <span
+                    className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-primary/50 text-primary transition-transform ${isOpen ? "rotate-180" : ""
+                      }`}
+                  >
+                    <HiChevronDown className="text-[20px]" />
+                  </span>
+                </Button>
+
+                {isOpen && (
+                  <p className="pt-3 text-sm leading-relaxed text-on-surface-variant sm:text-base">
+                    {item.a}
+                  </p>
+                )}
+              </div>
+            );
+          })}
+        </div>
       </div>
     </section>
   );
